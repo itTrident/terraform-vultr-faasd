@@ -1,4 +1,5 @@
 #!/bin/bash
+
 mkdir -p /var/lib/faasd/secrets/
 echo ${basic_auth_user} > /var/lib/faasd/secrets/basic-auth-user
 echo ${basic_auth_password} > /var/lib/faasd/secrets/basic-auth-password
@@ -20,10 +21,8 @@ if [ ! -z "$${FAASD_DOMAIN}" ]; then
     ufw allow 443/tcp
 else
     ufw allow 8080/tcp
-    ufw allow 9090/tcp
+#    ufw allow 9090/tcp
 fi
 
 ufw enable
 %{ endif }
-
-
