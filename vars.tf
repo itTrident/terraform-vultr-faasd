@@ -59,5 +59,3 @@ variable "ufw_enabled" {
   description = "Toggle UFW"
   type        = bool
 }
-
-
