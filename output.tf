@@ -8,8 +8,8 @@ output "user_name" {
 }
 
 output "password" {
-  sensitive = true
-  value     = local.basic_auth_password
+  description = "Path of the Faasd password"
+  value       = "/var/lib/faasd/secrets/basic-auth-password"
 }
 
 output "instance_ip" {

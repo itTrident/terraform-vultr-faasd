@@ -70,7 +70,7 @@ module "faasd" {
 | ---- | ----------- |
 | gateway_url | The url of the faasd gateway. |
 | user_name | The basic auth user name. |
-| password | The basic auth password. |
+| password | Path of basic auth password. |
 | instance_ip | The public IP address of the faasd instance. |
 
 ## See Also
