@@ -61,7 +61,7 @@ variable "ufw_enabled" {
 }
 
 variable "firewall_rules" {
-  description = "List out the port number and protocall to allow in Firewall Rules"
-  type        = "List"
+  description = "List out the port number and protocol to allow in Firewall Rules"
+  type        = list(any)
   default     = [{ protocol = "tcp", port = "22", notes = "Allow SSH" }, { protocol = "tcp", port = "8080", notes = "Allow HTTP" }, { protocol = "tcp", port = "443", notes = "Allow HTTPS" }]
 }
